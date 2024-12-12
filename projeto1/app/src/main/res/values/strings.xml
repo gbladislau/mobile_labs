@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">projeto1</string>
+    <string name="meu_botao">おはよう</string>
+    <string name="salario">Salário (R$)</string>
+    <string name="gastos">Gastos (R$)</string>
+    <string name="imposto_de_renda">SEU IMPOSTO DE RENDA SERÁ:</string>
+    <string name="Reais">R$</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="salario_mensal">Salário mensal</string>
+    <string name="gastos_totais">Gastos totais com saúde e educação</string>
+    <string name="total_imposto">0</string>
+</resources>
