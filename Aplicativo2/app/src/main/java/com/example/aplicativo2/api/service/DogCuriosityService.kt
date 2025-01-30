@@ -7,7 +7,7 @@ import retrofit2.http.Path
 
 interface DogCuriosityService {
 
-    @GET("facts?number={number}")
-    fun getNewCuriosity(@Path("number") number: Int): Call <List<DogCuriosityEntity>>
+    @GET("facts?number=1")
+    fun getNewCuriosity(): Call <DogCuriosityEntity>
 
 }

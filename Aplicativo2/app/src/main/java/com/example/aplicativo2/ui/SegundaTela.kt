@@ -36,7 +36,7 @@ class SegundaTela : AppCompatActivity(), OnClickListener {
             "Olá, $it".toString().also { binding.nomeUsuario.text = it }
         })
         segundaTelaVM.curiosidade().observe(this, Observer{
-            binding.curiosidade.text = it
+            binding.curiosidade.setText(it)
         })
     }
 
@@ -46,19 +46,23 @@ class SegundaTela : AppCompatActivity(), OnClickListener {
             R.id.dog -> {
                 binding.dog.setColorFilter(ContextCompat.getColor(this, R.color.yellow))
                 binding.cat.setColorFilter(ContextCompat.getColor(this, R.color.white))
+                binding.dog.isSelected = true
+                binding.cat.isSelected = false
                 segundaTelaVM.setCuriosidadeCachorro()
             }
             R.id.cat -> {
                 binding.cat.setColorFilter(ContextCompat.getColor(this, R.color.yellow))
                 binding.dog.setColorFilter(ContextCompat.getColor(this, R.color.white))
+                binding.cat.isSelected = true
+                binding.dog.isSelected = false
                 segundaTelaVM.setCuriosidadeGato()
             }
             R.id.botao_gerar_frase -> {
                 if(binding.dog.isSelected) {
                     segundaTelaVM.setCuriosidadeCachorro()
                 }
-                if(binding.cat.isSelected) {
-                    segundaTelaVM.setCuriosidadeCachorro()
+                else if(binding.cat.isSelected) {
+                    segundaTelaVM.setCuriosidadeGato()
                 }
                 else {
                     Toast.makeText(this, "Selecione um pet!", Toast.LENGTH_LONG).show()

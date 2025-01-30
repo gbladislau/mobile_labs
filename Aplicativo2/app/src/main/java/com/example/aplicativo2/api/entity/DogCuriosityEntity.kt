@@ -5,5 +5,5 @@ import com.google.gson.annotations.SerializedName
 class DogCuriosityEntity {
 
     @SerializedName("facts")
-    var facts: String = ""
+    lateinit var facts: List<String>
 }

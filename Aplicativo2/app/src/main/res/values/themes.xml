@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Aplicativo2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Aplicativo2" parent="Base.Theme.Aplicativo2" />
+
+    <style name="Button.AzulClaro" parent="Base.Theme.Aplicativo2">
+        <item name="colorAccent">@color/botao_inicio</item>
+    </style>
+</resources>

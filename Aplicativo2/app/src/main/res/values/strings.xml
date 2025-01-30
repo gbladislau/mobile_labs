@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplicativo 2</string>
+    <string name="frases_de_gatos_e_cachorros">Frases de gatos e cachorros</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="ola_user">Olá, Fulano Otário</string>
+    <string name="gerar_outra_frase">GERAR OUTRA FRASE</string>
+    <string name="curiosidade">Clique no cachorro ou gato para gerar uma curiosidade sobre eles</string>
+
+</resources>

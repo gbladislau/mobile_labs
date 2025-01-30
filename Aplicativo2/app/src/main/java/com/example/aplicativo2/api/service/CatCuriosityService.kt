@@ -7,5 +7,5 @@ import retrofit2.Call
 
 interface CatCuriosityService {
     @GET("fact")
-    fun getNewCuriosity(): Call<List<CatCuriosityEntity>>
+    fun getNewCuriosity(): Call<CatCuriosityEntity>
 }
